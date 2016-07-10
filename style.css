@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(font/Roboto-100.woff2) format('woff2'), url(font/Roboto-100.ttf) format('truetype');
+    unicode-range: U+0000-00FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background: #333;
+    color: white;
+}
+header,
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header {
+    height: 100vh;
+    font-weight: 100;
+    text-align: center;
+    flex-direction: column;
+}
+h1 {
+    font-weight: 100;
+    /* Two font-weight definitions shouldn't be necessary */
+    font-size: 5em;
+}
+ul {
+    position: absolute;
+    top: 0;
+    cursor: default;
+    list-style: none;
+    top: 10px;
+}
+ul li {
+    display: inline-block;
+    margin: 2px;
+}
+ul a {
+    cursor: default;
+}
+svg {
+    fill: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 2px white;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+svg:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+}
+li:first-child svg:hover {
+    border-color: #ff6f32;
+    fill: #ff6f32;
+}
+li:nth-child(2) svg:hover {
+    border-color: #4fec51;
+    fill: #4fec51;
+}
+li:nth-child(3) svg:hover {
+    border-color: #55acee;
+    fill: #55acee;
+}
+li:nth-child(4) svg:hover {
+    border-color: #dd4e41;
+    fill: #dd4e41;
+}
