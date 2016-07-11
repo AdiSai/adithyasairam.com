@@ -9,35 +9,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-    background: #333;
-    color: white;
+html, body {
+    height: 100%;
 }
-header,
+body,
 ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
-header {
-    height: 100vh;
-    font-weight: 100;
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background: #333;
+    color: white;
     text-align: center;
     flex-direction: column;
 }
 h1 {
     font-weight: 100;
-    /* Two font-weight definitions shouldn't be necessary */
-    font-size: 5em;
+    font-size: 80px;
+}
+p {
+    max-width: 5in;
+    margin: 5px 5px 20px;
+    font-size: 20px;
+    line-height: 1.2;
 }
 ul {
-    position: absolute;
-    top: 0;
     cursor: default;
     list-style: none;
-    top: 10px;
 }
 ul li {
     display: inline-block;
